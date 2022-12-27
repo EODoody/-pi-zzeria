@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="random.css">
+
+  </head>
+  <body>
+
+
+    <!-- Login Form -->
+<div class="container mt-5">
+  <h2>Pizzeria Login</h2>
+  <form action="login.php" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- Registration Form -->
+<div class="container mt-5">
+  <h2>Pizzeria Registration</h2>
+  <form action="register.php" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="confirm_pwd" placeholder="Confirm password" name="confirm_password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+<div class="container mt-5" style="margin-bottom: 50px;">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+<hr style="margin-bottom: 75px;">
+
+
+<!--This will be used in another page to show the progress of your order  -->
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" 
+  style="width: 75%; color: whitesmoke; font-size: large;">Progress bar </div> 
+</div>
+
+<hr style="margin-bottom: 100px;">
+
+<!-- This will link to another page  (button with popover)-->
+<div class="d-flex p-2 justify-content-between">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover Header" data-bs-content="I SAID USELESS BUTTON">Useless Button</button>
+    <div class="spinner-border text-muted" ></div>
+    <a href="https://eodoody.github.io/CV/CV/index.html">Github CV</a>
+
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+      </script>
+
+</div>
+
+<br style="margin-bottom: 100px;">
+
+
+
+<hr style="margin-bottom: 100px;">
+
+
+
+  </body>
+
+</html>
+
+
