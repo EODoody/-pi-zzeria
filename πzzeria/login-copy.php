@@ -41,7 +41,6 @@
         <button class="login-button" onclick="window.location.href='login.html'">Log In</button>
 
 
-
       </div>
     </nav>
 
