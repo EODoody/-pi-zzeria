@@ -39,5 +39,13 @@ button {
   border-radius: 4px;
   font-size: 18px;
   font-weight: bold;
-  background-color:bisque; }
+  }
 
+  .login-button{
+    width: auto;
+  }
+  
+  p{
+    margin: 0;
+    margin-left: 20%;
+  }

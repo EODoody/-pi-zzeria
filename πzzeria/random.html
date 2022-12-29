@@ -5,8 +5,64 @@
 
     <link rel="stylesheet" href="random.css">
 
+
+    <style>
+      /* Add some styling to the navigation bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightgrey;
+        height: 60px;
+      }
+  
+      /* Style the left items */
+      nav .left-items {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+      }
+  
+      .left-items{
+        margin-right: 10px;
+      }
+      /* Style the login/signup button */
+      nav .login-button {
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: end;
+      }
+  
+      /* Add some hover effects to the login/signup button */
+      nav .login-button:hover {
+        background-color: lightblue;
+      }
+    </style>
+
+
+
+
   </head>
   <body>
+
+    <!-- Create the navigation bar -->
+  <nav>
+    <!-- Left items -->
+    <div class="left-items">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Login/signup button -->
+    <button class="login-button">Login/Signup</button>
+  </nav>
 
 
     <!-- Login Form -->
