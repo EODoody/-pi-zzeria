@@ -57,8 +57,8 @@ if (username_exists($username)) {
 
 else{
 
-$sql = "INSERT INTO user ( username, password, email )
-VALUES ('$username', '$email', '$password')";
+$sql = "INSERT INTO user ( username, password, email, First_Name, Last_Name, Phone_Number )
+VALUES ('$username', '$password', '$email', '$firstname' , '$lastname' , '$phone_number')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully !";
