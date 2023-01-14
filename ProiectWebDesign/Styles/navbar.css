@@ -1,0 +1,26 @@
+/* Style the login/signup button */
+nav .login-button {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: end;
+  font-family: 'Bree Serif', serif;
+}
+
+/* Add some hover effects to the login/signup button */
+nav .login-button:hover {
+  background-color: lightblue;
+}
+nav .nav-item{
+  font-family: 'Bree Serif', serif;
+}
+.body{
+  color: antiquewhite;
+  margin: 0px;
+  font-family: 'Bree Serif', serif;
+}
