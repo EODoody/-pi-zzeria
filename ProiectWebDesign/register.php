@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
-  <head>
-
-
-  </head>
-
-  <body>
 
 
   <h1>SOMETHING HAPPENED! (is it good or bad?)</h1>
