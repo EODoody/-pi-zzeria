@@ -41,7 +41,6 @@ if ($result->num_rows > 0) {
       
       header("Location: http://localhost:3000/".$url);
 
-      
     exit();
  
 } else {

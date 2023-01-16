@@ -1,0 +1,33 @@
+<?php
+    // Connect to the database
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "pizzeria3.14";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+
+    ob_start();
+
+    // Retrieve the image from the database
+    $sql = "SELECT Pizza_Image FROM pm_pizza where Pizza_ID = 2";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+    
+    $image = $row['Pizza_Image'];
+
+    // Set the content type header to the appropriate image type
+    header('Content-Type: image/jpeg');
+
+    // Output the image
+    echo $image;
+    ob_end_flush();
+
+    $conn->close();
+?>
+
+THIS WORKS FOR A SINGULAR PICTURE
