@@ -69,7 +69,7 @@
           die("Connection failed: " . $conn->connect_error);
       }
 
-      $sql = "SELECT Pizza_Image, Pizza_Title, Pizza_Description FROM pm_pizza";
+      $sql = "SELECT Pizza_ID, Pizza_Image, Pizza_Title, Pizza_Description FROM pm_pizza";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
@@ -89,8 +89,8 @@
                     echo '<h5 class="card-title">'. $row["Pizza_Title"] .'</h5>';
                     echo '<p class="card-text">'. $row["Pizza_Description"] .'</p>';
                     echo '<form>';
-                     echo  '<label for="pizza-with-mazzarella-cheese-pepperoni-tomatoes">';
-                      echo  '<input type="checkbox" id="pizza-with-mazzarella-cheese-pepperoni-tomatoes" name="order[]" value="6">
+                     echo  '<label for="'.$row["Pizza_Title"].'">';
+                      echo  '<input type="checkbox" id="'.$row["Pizza_ID"].'" name="order[]" value="'.$row["Pizza_ID"].'">
                                       Add to Order';
                       echo '</label>';
                     echo '</form>';

@@ -122,6 +122,40 @@
       <img class="delivery-man" src="Images/absolutes/delivery.png">
     </div>
 
+   
+
+
+
+    <div style="margin-top: -15%;" id="about-div">
+      <div style="color: white;">
+          <h1>About Our Pizzeria</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. 
+            Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim 
+            ornare nisi, vitae mattis nulla ante id dui.</p>
+          <p>Nostra pizzeria è una vera e propria istituzione a città. Abbiamo servito la migliore pizza italiana per decenni, con ingredienti 
+            freschi e una cottura perfetta nella nostra forno a legna. La tradizione è molto importante per noi e vogliamo che i nostri clienti s
+            entano che stanno venendo in un vero e proprio ristorante italiano.</p>
+          <p>Siamo orgogliosi di offrire un'ampia selezione di pizze classiche, tra cui Margherita, Pepperoni e Quattro Formaggi. Inoltre, 
+            offriamo anche pizze speciali stagionali e opzioni per vegetariani e vegani. Non dimenticate di provare la nostra famosa pizza ai 
+            frutti di mare, con frutti di mare freschi e una salsa di pomodoro leggermente piccante.</p>
+          <p>Vi invitiamo a venire a provare la vera cucina italiana e gustare la pizza migliore della città nella nostra accogliente atmosfera. 
+            Grazie per scegliere la nostra pizzeria.</p>
+            <div>
+              
+            </div>
+    </div>
+</div>
+
+  <div class="container" style="margin-top: 2%;">
+    <div class="column-left">
+      <img src="Images\our_mainchef.jpg" alt="image1">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="column-right">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4916.93846741557!2d25.58974749526497!3d45.663281803718384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b8f2205d853%3A0x98638d25ed302ba7!2sPizzaiolo!5e0!3m2!1sen!2sro!4v1673899191939!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
 
 
 </body>

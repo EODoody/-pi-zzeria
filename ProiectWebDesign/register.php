@@ -10,7 +10,7 @@
   <body>
 
 
-  <h1>Succes!</h1>
+  <h1>SOMETHING HAPPENED! (is it good or bad?)</h1>
 
 <?php
 //database connection 'clienti'
@@ -42,6 +42,20 @@ function username_exists($username) {
   }
 }
 
+function email_exists($email) {
+  // Connect to the database
+  $db = mysqli_connect("localhost", "root", "", "pizzeria3.14");
+
+  // Check if the email exists
+  $query = "SELECT * FROM user WHERE email='$email'";
+  $result = mysqli_query($db, $query);
+  if (mysqli_num_rows($result) > 0) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -49,9 +63,9 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $phone_number = $_POST['phone_number'];
 
-if (username_exists($username)) {
+if (username_exists($username)== TRUE || email_exists($email)== TRUE) {
   // Show error message
-  exit('Sorry, that username is already taken. 
+  exit('Sorry, that username or email is already taken. 
   Please choose a different one.');
 }
 

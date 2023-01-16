@@ -33,5 +33,19 @@ div .delivery-man{
   
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  color: antiquewhite;
+}
+.column-left, .column-right {
+  width: 50%;
+  color: antiquewhite;
+}
 
+
+#about-div{
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
