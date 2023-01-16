@@ -39,21 +39,16 @@ if ($result->num_rows > 0) {
       $url='meniu.php';
       }
       
-      header("Location: http://localhost:3000/".$url);
-
+      header("Location: http://localhost/ProiectWebDesign/".$url);
+      $conn->close();
     exit();
  
 } else {
   
-  header("Location: http://localhost:3000/".$url);
-  
+  header("Location: http://localhost/ProiectWebDesign/".$url);
+  $conn->close();
   exit();
 }
 
 
-$conn->close();
-?>
-</body>
 
-
-</html>

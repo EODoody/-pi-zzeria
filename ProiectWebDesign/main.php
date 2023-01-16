@@ -126,8 +126,8 @@
 
 
 
-    <div style="margin-top: -15%;" id="about-div">
-      <div style="color: white;">
+    <div style="margin-top: -15%;" class="about-div">
+      <div style="color: antiquewhite;">
           <h1>About Our Pizzeria</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. 
             Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim 
@@ -146,18 +146,17 @@
     </div>
 </div>
 
-  <div class="container" style="margin-top: 2%;">
-    <div class="column-left">
-      <img src="Images\our_mainchef.jpg" alt="image1">
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="column-right">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4916.93846741557!2d25.58974749526497!3d45.663281803718384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b8f2205d853%3A0x98638d25ed302ba7!2sPizzaiolo!5e0!3m2!1sen!2sro!4v1673899191939!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+<div class="container" style="margin-top: 2%;">
+  <div class="column-left">
+    <img src="Images\our_mainchef.jpg" alt="image1">
+    <p style="color: antiquewhite;">Lorem ipsum dolor sit amet.</p>
   </div>
+  <div class="column-right">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4916.93846741557!2d25.58974749526497!3d45.663281803718384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b8f2205d853%3A0x98638d25ed302ba7!2sPizzaiolo!5e0!3m2!1sen!2sro!4v1673899191939!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
 
-
-
+  
 </body>
 
 </html>
