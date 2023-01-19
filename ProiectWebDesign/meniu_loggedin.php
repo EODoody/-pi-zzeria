@@ -1,5 +1,9 @@
 <?php 
 session_start();
+if(!isset($_SESSION['user_id'])){
+    header("Location: login_form.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -69,6 +73,12 @@ session_start();
                   echo '<div class="card-body">';
                     echo '<h5 class="card-title">'. $row["Pizza_Title"] .'</h5>';
                     echo '<p class="card-text">'. $row["Pizza_Description"] .'</p>';
+                    echo '<form>';
+                     echo  '<label for="'.$row["Pizza_Title"].'">';
+                      echo  '<input type="checkbox" id="'.$row["Pizza_ID"].'" name="order[]" value="'.$row["Pizza_ID"].'">
+                                      Add to Order';
+                      echo '</label>';
+                    echo '</form>';
                   echo '</div>';
                 echo '</div>';
               echo '</div>';

@@ -18,16 +18,20 @@
   border-radius: 50%;
 }
 
-div .oven-img{
+div .oven-img {
   position: absolute;
-  top: 20%;
+  top: 5%;
   right: -20%;
   width: 50%;
-  border-radius: 100%;
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
+
 div .delivery-man{
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: -2%;
   width: 30%;
   border-radius: 50%;
@@ -47,5 +51,9 @@ div .delivery-man{
 .about-div{
   margin-left: 25%;
   margin-right: 25%;
+}
+
+.carousel-container {
+  position: relative;
 }
 

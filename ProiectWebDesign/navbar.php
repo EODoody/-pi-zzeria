@@ -18,8 +18,8 @@
   </head>
 
   <body>
-  
 
+ 
 
     <!-- Black with grey text NAVBAR -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -50,23 +50,26 @@
 <script>
     var button = document.getElementById("ConnectionButton");
     var text = document.getElementById("login-text");
-    <?php 
-    session_start();
-    if(isset($_SESSION['user_id'])) { ?>
+    <?php
+    
+    if(isset($_SESSION['user_id'])) {
+        ?>
         text.innerHTML = "Welcome, <?php echo $_SESSION['username']; ?>";
         text.style.display = "block";
         button.onclick = function() {
             <?php 
+              
                 session_unset();
                 session_destroy();
             ?>
+            
             location.reload();
         }
     <?php } else { ?>
         button.innerHTML = "Log in";
         text.style.display = "block";
         button.onclick = function() {
-            window.location.href = "login.html";
+            window.location.href = "login_form.php";
         }
     <?php } ?>
 </script>

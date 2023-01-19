@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,10 +37,9 @@
   <body background="Images/background.jpg">
    
 
-     <!-- READ THE NAVBAR ITEM -->
-     <?php
-include 'navbar.php';
-?>
+       <!-- Include navbar -->
+    <?php include 'navbar.php'; ?>
+  
 
 
     <div class="container mt-5">

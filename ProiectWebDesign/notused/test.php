@@ -98,3 +98,11 @@ if(isset($_POST['login'])) {
 }
   </div>
 </div>
+
+
+================================================================================
+
+if (!isset($_SESSION['user']['id'])) {
+  header("Location: login_form.php");
+  exit;
+}
