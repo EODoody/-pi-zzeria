@@ -7,7 +7,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="Styles/promotii.css">
-    <link rel="stylesheet" href="Styles/navbar.css">
+    
 
     <!-- Connecting font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,27 +32,10 @@
   <body background="Images/background.jpg">
    
 
-       <!-- Black with grey text NAVBAR -->
-       <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="main.php">Dood &pi;zzeria</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="meniu.php">Meniu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="promotii.php">Promotii</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Locatii Dine-in</a>
-          </li>
-        </ul>
-        <!-- Login/signup button -->
-        <button class="login-button" onclick="window.location.href='login.html'">Log In</button>
-      </div>
-    </nav>
+     <!-- READ THE NAVBAR ITEM -->
+     <?php
+include 'navbar.php';
+?>
 
 
     <div class="container mt-5">

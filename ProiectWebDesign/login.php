@@ -5,6 +5,9 @@
 <body>
   
 <?php
+
+session_start();
+
 //database connection 'clienti'
 $servername = "localhost";
 $username = "root";
@@ -32,20 +35,21 @@ if ($result->num_rows > 0) {
   // output data of each row
 
   if($row = $result->fetch_assoc())
-    session_start();
-    $_SESSION['user_id'] = $row["ID"];
+    
+  $_SESSION['user_id'] = $row["ID"];
+  $_SESSION['username'] = $row["username"];
 
     if(isset($_SESSION['user_id'])){
       $url='meniu.php';
       }
       
-      header("Location: http://localhost/ProiectWebDesign/".$url);
+      header("Location: http://localhost:3000/".$url);
       $conn->close();
     exit();
  
 } else {
   
-  header("Location: http://localhost/ProiectWebDesign/".$url);
+  header("Location: http://localhost:3000/".$url);
   $conn->close();
   exit();
 }

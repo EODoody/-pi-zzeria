@@ -1,21 +1,4 @@
-/* Style the login/signup button */
-nav .login-button {
-  background-color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 10px;
-  font-size: 14px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: end;
-  font-family: 'Bree Serif', serif;
-}
 
-/* Add some hover effects to the login button */
-nav .login-button:hover {
-  background-color: lightblue;
-}
 nav .nav-item{
   font-family: 'Bree Serif', serif;
 }
@@ -23,4 +6,21 @@ nav .nav-item{
   color: antiquewhite;
   margin: 0px;
   font-family: 'Bree Serif', serif;
+}
+
+#ConnectionButton{
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: end;
+  font-family: 'Bree Serif', serif;
+}
+
+nav #ConnectionButton:hover {
+  background-color: lightblue;
 }

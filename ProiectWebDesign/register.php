@@ -1,6 +1,7 @@
 
 
   <h1>SOMETHING HAPPENED! (is it good or bad?)</h1>
+  <a href="main.php"> Go to the main page, good luck traveler </a>
 
 <?php
 //database connection 'clienti'
